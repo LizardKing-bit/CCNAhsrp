@@ -1,0 +1,12 @@
+Task #2: Configure DSW2 as the STANDBY HSRP router for the virtual IP address of 10.1.1.1. Also, enable the Preempt feature.
+
+Password is: cisco
+
+CMDs:
+ena
+conf term
+int gig 1/0/1
+standby ip 10.1.1.1 (Sets virtual ip to 10.1.1.1)
+standby preempt (sets it as the preemptive router if DSW1 is down)
+end
+wr
