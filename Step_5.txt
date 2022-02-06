@@ -1,0 +1,7 @@
+Task #5: Shutdown interface Gig 1/0/1 on DSW1.
+
+CMD
+ena
+conf term
+int gig 1/0/1
+shutdown
