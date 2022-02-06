@@ -1,0 +1,17 @@
+Task #3: Do a Trace Route from the PC to the "Internet" address of 1.1.1.1, and notice which gateway it's using to get out to the Internet.
+
+-Go to the PC choose Desktop tab>Command Prompt
+
+type:
+tracert 1.1.1.1 (internet)
+
+You shoud see the following:
+
+ 1   0 ms      0 ms      0 ms      10.1.1.2
+  2   0 ms      0 ms      1 ms      1.1.1.1
+
+This will bring you to step 4:
+Task #4: Start a continuous Ping to 1.1.1.1 on the PC (using the command "ping -n 999999 1.1.1.1").
+
+Type:
+ping -n 999999 1.1.1.1 (This will continuously ping the ip)
