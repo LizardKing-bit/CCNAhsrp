@@ -1,0 +1,8 @@
+Task #8: Bring the Gig 1/0/1 interface on DSW1 back up.
+
+Go back to DSW1 CLI:
+
+ena
+conf term
+int gig 1/0/1
+no shutdown
