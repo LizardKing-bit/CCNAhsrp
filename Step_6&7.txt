@@ -1,0 +1,18 @@
+Task #6: Determine if any Ping packets were dropped after you shutdown the Gig 1/0/1 interface on DSW1.
+
+Gp back to the PC command prompt and check to see if there were any Request Timed Out messages
+
+Next hit ctrl-C to stop the continuous ping in the CMD prompt. 
+
+This takes us to step 7 (Task #7: Do a Trace Route from the PC to the "Internet" address of 1.1.1.1, and notice which gateway it's using to get out to the Internet.)
+
+still in the CMD prompt type:
+
+tracert 1.1.1.1
+
+This should be your output:
+
+ 1   0 ms      0 ms      0 ms      10.1.1.3
+  2   0 ms      0 ms      1 ms      1.1.1.1
+
+Your Active HSRP is down so the route has switched to your standby HSRP on DSW2 10.1.1.3
