@@ -5,5 +5,5 @@ DSW1>ena
 DSW1#conf term
 DSW1(config)#int gig 1/0/1
 DSW1(config-if)#standby ip 10.1.1.1 (sets routers virtual IP to 10.1.1.1. It's actual IP is 10.1.1.2)
-DSW1(config-if)#standby priority 110 )Sets the hsrp priority to 110 aka Active)
+DSW1(config-if)#standby priority 110 (Sets the hsrp priority to 110 aka Active)
 DSW1(config-if)#standby preempt (preempt lets you know that this will be given the active HSRP assuming this router is up)
